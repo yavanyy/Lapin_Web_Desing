@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Вхід — TimeTrack</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="min-h-screen bg-slate-100 text-slate-900 flex flex-col">
+
+  <header class="bg-white shadow-sm">
+    <div class="max-w-6xl mx-auto px-4 py-4 flex flex-col md:flex-row md:items-center md:justify-between gap-4">
+      <div>
+        <h1 class="text-2xl font-bold text-blue-700">TimeTrack</h1>
+        <p class="text-sm text-slate-500">Додаток для обліку робочого часу</p>
+      </div>
+
+      <nav class="flex flex-wrap gap-3 text-sm font-medium">
+        <a href="index.html" class="hover:text-blue-700">Головна</a>
+        <a href="register.html" class="hover:text-blue-700">Реєстрація</a>
+        <a href="login.html" class="text-blue-700">Вхід</a>
+        <a href="profile.html" class="hover:text-blue-700">Профіль</a>
+        <a href="about.html" class="hover:text-blue-700">Про додаток</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="flex-grow flex items-center justify-center px-4 py-10">
+    <section class="w-full max-w-md bg-white rounded-2xl shadow p-8">
+      <h2 class="text-2xl font-bold mb-2">Вхід до сайту</h2>
+      <p class="text-slate-500 mb-6">Увійдіть, щоб переглядати та зберігати свої робочі сеанси.</p>
+
+      <form class="space-y-4">
+        <div>
+          <label class="block text-sm font-medium mb-1">Email</label>
+          <input type="email" placeholder="example@email.com"
+            class="w-full rounded-xl border border-slate-300 px-4 py-3 focus:outline-none focus:ring-2 focus:ring-blue-500" />
+        </div>
+
+        <div>
+          <label class="block text-sm font-medium mb-1">Пароль</label>
+          <input type="password" placeholder="Введіть пароль"
+            class="w-full rounded-xl border border-slate-300 px-4 py-3 focus:outline-none focus:ring-2 focus:ring-blue-500" />
+        </div>
+
+        <button type="button" class="w-full bg-blue-700 text-white py-3 rounded-xl font-semibold hover:bg-blue-800 transition">
+          Увійти
+        </button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="bg-white border-t">
+    <div class="max-w-6xl mx-auto px-4 py-4 text-center text-sm text-slate-500">
+      © 2026 TimeTrack. Лабораторна робота №1 з Web-дизайну.
+    </div>
+  </footer>
+
+</body>
+</html>

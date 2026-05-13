@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Про додаток — TimeTrack</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="min-h-screen bg-slate-100 text-slate-900 flex flex-col">
+
+  <header class="bg-white shadow-sm">
+    <div class="max-w-6xl mx-auto px-4 py-4 flex flex-col md:flex-row md:items-center md:justify-between gap-4">
+      <div>
+        <h1 class="text-2xl font-bold text-blue-700">TimeTrack</h1>
+        <p class="text-sm text-slate-500">Додаток для обліку робочого часу</p>
+      </div>
+
+      <nav class="flex flex-wrap gap-3 text-sm font-medium">
+        <a href="index.html" class="hover:text-blue-700">Головна</a>
+        <a href="register.html" class="hover:text-blue-700">Реєстрація</a>
+        <a href="login.html" class="hover:text-blue-700">Вхід</a>
+        <a href="profile.html" class="hover:text-blue-700">Профіль</a>
+        <a href="about.html" class="text-blue-700">Про додаток</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="flex-grow">
+    <section class="max-w-5xl mx-auto px-4 py-10">
+      <div class="bg-white rounded-2xl shadow p-8">
+        <div class="flex flex-col md:flex-row items-center gap-8">
+          <div class="w-28 h-28 rounded-3xl bg-blue-700 text-white flex items-center justify-center text-4xl font-bold shadow">
+            TT
+          </div>
+
+          <div>
+            <h2 class="text-3xl font-bold mb-4">Про додаток TimeTrack</h2>
+            <p class="text-slate-600 leading-7 mb-4">
+              TimeTrack — це статичний Web-інтерфейс додатка для обліку робочого часу. Користувач може запускати таймер, призупиняти або продовжувати його, зупиняти роботу та зберігати назву, час початку і час завершення сеансу.
+            </p>
+
+            <p class="text-slate-600 leading-7">
+              Додаток розроблений для демонстрації структури сучасного адаптивного сайту з використанням HTML5 та Tailwind CSS. У межах лабораторної роботи реалізовано лише статичну частину інтерфейсу без програмування реальної логіки таймера.
+            </p>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mt-8">
+          <div class="bg-slate-100 rounded-xl p-5">
+            <h3 class="font-bold mb-2">Запуск таймера</h3>
+            <p class="text-sm text-slate-600">Користувач починає новий робочий сеанс і бачить поточну тривалість.</p>
+          </div>
+
+          <div class="bg-slate-100 rounded-xl p-5">
+            <h3 class="font-bold mb-2">Пауза та продовження</h3>
+            <p class="text-sm text-slate-600">Передбачено керування таймером через кнопки призупинення і продовження.</p>
+          </div>
+
+          <div class="bg-slate-100 rounded-xl p-5">
+            <h3 class="font-bold mb-2">Збереження сеансів</h3>
+            <p class="text-sm text-slate-600">Журнал містить назву роботи, початок, завершення і тривалість.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-white border-t">
+    <div class="max-w-6xl mx-auto px-4 py-4 text-center text-sm text-slate-500">
+      © 2026 TimeTrack. Лабораторна робота №1 з Web-дизайну.
+    </div>
+  </footer>
+
+</body>
+</html>
